@@ -1,11 +1,10 @@
-cat > README.md << 'EOF'
 # DUJ Research Scout 🦊
 
 Hardware: Local NVIDIA Jetson edge hardware (affectionately named “Doge” 🦊) running OpenClaw + NVIDIA Nemotron.
 
 Experimental multi-agent public research workflow running through OpenClaw + NVIDIA Nemotron.
 
-This repository captures the **first successful research swarm run** executed on NVIDIA Nemotron through OpenClaw orchestration on local edge hardware ("Doge" 🦊).
+This repository captures the **first successful research swarm run** executed on NVIDIA Nemotron through OpenClaw orchestration on local NVIDIA Jetson edge hardware.
 
 ## What this does
 
