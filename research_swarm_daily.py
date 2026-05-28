@@ -27,7 +27,7 @@ OUT.mkdir(exist_ok=True)
 def run(agent, msg, timeout=600):
     try:
         r = subprocess.run(
-            ["/usr/local/bin/openclaw", "agent", "--agent", agent, "--message", msg],
+            ["openclaw", "agent", "--agent", agent, "--message", msg],
             capture_output=True,
             text=True,
             timeout=timeout,
