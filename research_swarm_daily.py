@@ -2,13 +2,32 @@ import subprocess
 import datetime
 import pathlib
 
+def duj_handoff_packet(source_agent, output, goal, max_chars=3500):
+    timeout_risk = len(output) > max_chars
+
+    return f"""
+DUJ-LITE HANDOFF PACKET
+
+Source agent: {source_agent}
+Goal anchor: {goal}
+
+Handoff size chars: {len(output)}
+Timeout risk: {timeout_risk}
+
+Bounded summary:
+{output[:max_chars]}
+
+Instruction to next agent:
+Stay anchored to the goal. Critique only the bounded summary above. Prioritize weak assumptions, unsupported claims, missing bottlenecks, and confidence level.
+"""
+
 OUT = pathlib.Path("reports")
 OUT.mkdir(exist_ok=True)
 
 def run(agent, msg, timeout=600):
     try:
         r = subprocess.run(
-            ["openclaw", "agent", "--agent", agent, "--message", msg],
+            ["/usr/local/bin/openclaw", "agent", "--agent", agent, "--message", msg],
             capture_output=True,
             text=True,
             timeout=timeout,
@@ -34,25 +53,20 @@ executor = run(
     "Summarize public pain points in multi-agent systems: context explosion, latency amplification, duplicated work, resource contention, tool failures, coordination overhead, synchronization issues, and GPU scarcity. Public information only. No private DUJ internals. Keep it concise and actionable."
 )
 
-print("🛡️ Running SafetyClaw...")
+goal = "Public research scan on multi-agent AI bottlenecks, GPU scarcity, edge-agent orchestration, coordination failures, and distributed systems constraints."
+
+executor_packet = duj_handoff_packet(
+    "ExecutorClaw",
+    executor,
+    goal,
+    max_chars=3500
+)
+
+print("🛡️ Running SafetyClaw with DUJ-lite handoff...")
 safety = run(
     "safetyclaw",
-    f"""Critique the following research summary.
-
-Focus only on:
-- weak assumptions
-- unsupported claims
-- hallucination risk
-- missing bottlenecks
-- confidence level
-- what should be tested next
-
-Keep it concise.
-
-Research summary:
-{executor}
-""",
-    timeout=600,
+    f"Critique this bounded DUJ-lite handoff packet:\n\n{executor_packet}",
+    timeout=600
 )
 
 report.write_text(f"""# Public Research Swarm Report
