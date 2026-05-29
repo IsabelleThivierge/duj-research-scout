@@ -1,0 +1,72 @@
+===== DUJ RUN 1 =====
+🦊 CUDA Persistent Pool Test
+population=10000000
+active_frontier=1000000
+steps=200
+---------------------------------
+step=020 exec=20000000 violations=1841809 rate=9.21%
+step=040 exec=40000000 violations=3560299 rate=8.90%
+step=060 exec=60000000 violations=5192202 rate=8.65%
+step=080 exec=80000000 violations=6819387 rate=8.52%
+step=100 exec=100000000 violations=8522753 rate=8.52%
+step=120 exec=120000000 violations=10343047 rate=8.62%
+step=140 exec=140000000 violations=12290751 rate=8.78%
+step=160 exec=160000000 violations=14364844 rate=8.98%
+step=180 exec=180000000 violations=16572051 rate=9.21%
+step=200 exec=200000000 violations=18911658 rate=9.46%
+---------------------------------
+RESULT
+total_exec=200000000
+violations=18911658
+violation_rate=9.46%
+time_ms=5834.137
+hydrations_per_second=34280988
+status=PERSISTENT_POOL_ACTIVE
+===== DUJ RUN 2 =====
+🦊 CUDA Persistent Pool Test
+population=10000000
+active_frontier=1000000
+steps=200
+---------------------------------
+step=020 exec=20000000 violations=1841819 rate=9.21%
+step=040 exec=40000000 violations=3560305 rate=8.90%
+step=060 exec=60000000 violations=5192196 rate=8.65%
+step=080 exec=80000000 violations=6819368 rate=8.52%
+step=100 exec=100000000 violations=8522741 rate=8.52%
+step=120 exec=120000000 violations=10343027 rate=8.62%
+step=140 exec=140000000 violations=12290704 rate=8.78%
+step=160 exec=160000000 violations=14364814 rate=8.98%
+step=180 exec=180000000 violations=16572038 rate=9.21%
+step=200 exec=200000000 violations=18911653 rate=9.46%
+---------------------------------
+RESULT
+total_exec=200000000
+violations=18911653
+violation_rate=9.46%
+time_ms=5800.636
+hydrations_per_second=34478980
+status=PERSISTENT_POOL_ACTIVE
+===== DUJ RUN 3 =====
+🦊 CUDA Persistent Pool Test
+population=10000000
+active_frontier=1000000
+steps=200
+---------------------------------
+step=020 exec=20000000 violations=1841805 rate=9.21%
+step=040 exec=40000000 violations=3560309 rate=8.90%
+step=060 exec=60000000 violations=5192202 rate=8.65%
+step=080 exec=80000000 violations=6819372 rate=8.52%
+step=100 exec=100000000 violations=8522734 rate=8.52%
+step=120 exec=120000000 violations=10342995 rate=8.62%
+step=140 exec=140000000 violations=12290660 rate=8.78%
+step=160 exec=160000000 violations=14364763 rate=8.98%
+step=180 exec=180000000 violations=16571970 rate=9.21%
+step=200 exec=200000000 violations=18911585 rate=9.46%
+---------------------------------
+RESULT
+total_exec=200000000
+violations=18911585
+violation_rate=9.46%
+time_ms=5815.083
+hydrations_per_second=34393320
+status=PERSISTENT_POOL_ACTIVE

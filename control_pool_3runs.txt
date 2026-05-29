@@ -1,0 +1,72 @@
+===== CONTROL RUN 1 =====
+☠️ CUDA Persistent Pool CONTROL
+population=10000000
+active_frontier=1000000
+steps=200
+---------------------------------
+step=020 exec=20000000 violations=11020952 rate=55.10%
+step=040 exec=40000000 violations=22515796 rate=56.29%
+step=060 exec=60000000 violations=34446426 rate=57.41%
+step=080 exec=80000000 violations=46808317 rate=58.51%
+step=100 exec=100000000 violations=59601848 rate=59.60%
+step=120 exec=120000000 violations=72827966 rate=60.69%
+step=140 exec=140000000 violations=86482928 rate=61.77%
+step=160 exec=160000000 violations=100554607 rate=62.85%
+step=180 exec=180000000 violations=115034491 rate=63.91%
+step=200 exec=200000000 violations=129914811 rate=64.96%
+---------------------------------
+RESULT
+total_exec=200000000
+violations=129914811
+violation_rate=64.96%
+time_ms=5468.470
+hydrations_per_second=36573304
+status=CONTROL_POOL_ACTIVE
+===== CONTROL RUN 2 =====
+☠️ CUDA Persistent Pool CONTROL
+population=10000000
+active_frontier=1000000
+steps=200
+---------------------------------
+step=020 exec=20000000 violations=11020941 rate=55.10%
+step=040 exec=40000000 violations=22515774 rate=56.29%
+step=060 exec=60000000 violations=34446384 rate=57.41%
+step=080 exec=80000000 violations=46808266 rate=58.51%
+step=100 exec=100000000 violations=59601801 rate=59.60%
+step=120 exec=120000000 violations=72827937 rate=60.69%
+step=140 exec=140000000 violations=86482899 rate=61.77%
+step=160 exec=160000000 violations=100554561 rate=62.85%
+step=180 exec=180000000 violations=115034429 rate=63.91%
+step=200 exec=200000000 violations=129914747 rate=64.96%
+---------------------------------
+RESULT
+total_exec=200000000
+violations=129914747
+violation_rate=64.96%
+time_ms=5442.469
+hydrations_per_second=36748028
+status=CONTROL_POOL_ACTIVE
+===== CONTROL RUN 3 =====
+☠️ CUDA Persistent Pool CONTROL
+population=10000000
+active_frontier=1000000
+steps=200
+---------------------------------
+step=020 exec=20000000 violations=11020954 rate=55.10%
+step=040 exec=40000000 violations=22515770 rate=56.29%
+step=060 exec=60000000 violations=34446351 rate=57.41%
+step=080 exec=80000000 violations=46808213 rate=58.51%
+step=100 exec=100000000 violations=59601724 rate=59.60%
+step=120 exec=120000000 violations=72827893 rate=60.69%
+step=140 exec=140000000 violations=86482875 rate=61.77%
+step=160 exec=160000000 violations=100554533 rate=62.85%
+step=180 exec=180000000 violations=115034425 rate=63.91%
+step=200 exec=200000000 violations=129914712 rate=64.96%
+---------------------------------
+RESULT
+total_exec=200000000
+violations=129914712
+violation_rate=64.96%
+time_ms=5423.509
+hydrations_per_second=36876492
+status=CONTROL_POOL_ACTIVE
